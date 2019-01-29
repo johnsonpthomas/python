@@ -1,0 +1,16 @@
+n = int(input())
+arr = map(int ,input().split())
+print(arr)
+
+sortedarr = sorted(arr)
+print(sortedarr)
+print(sortedarr[-2])
+
+j = []
+for i in sortedarr:
+    print(i)
+    if i not in j:
+        j.append(i)
+ 
+print(j)  
+print(j[-2])
