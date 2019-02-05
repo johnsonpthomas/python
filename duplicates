@@ -1,0 +1,18 @@
+def duplicates(n):
+    j = sorted(n)
+    dupcount = 0
+    for i in range(0,len(j)):
+        x = j[i]
+        if x == j[i-1]:
+            dupcount = dupcount + 1
+            print(str(n) + ' - ' + str(x) + ' is duplicate')
+    
+    if dupcount == 0:
+        print(str(n) + ' has NO duplicates')           
+    
+duplicates([1,2,3,5,3])
+duplicates([4,4,2,5])
+duplicates([4,4,2,5,5])
+duplicates([8,5,1,8,2,1])
+duplicates([8,5,1,9,2,3])
+duplicates([8,8,8,8,8])
